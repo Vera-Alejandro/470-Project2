@@ -16,7 +16,7 @@ namespace Project2_Fish
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSeeFish());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -1,7 +1,10 @@
-﻿namespace Project2_Fish
+﻿using System.Windows.Forms;
+
+namespace Project2_Fish
 {
     partial class MainForm
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,10 +32,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.FishLabel = new System.Windows.Forms.Label();
-            this.crappieButton = new System.Windows.Forms.RadioButton();
-            this.perchButton = new System.Windows.Forms.RadioButton();
             this.walleyeButton = new System.Windows.Forms.RadioButton();
+            this.perchButton = new System.Windows.Forms.RadioButton();
+            this.crappieButton = new System.Windows.Forms.RadioButton();
+            this.FishLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +49,40 @@
             this.panel1.Size = new System.Drawing.Size(421, 273);
             this.panel1.TabIndex = 0;
             // 
+            // walleyeButton
+            // 
+            this.walleyeButton.AutoSize = true;
+            this.walleyeButton.Location = new System.Drawing.Point(71, 152);
+            this.walleyeButton.Name = "walleyeButton";
+            this.walleyeButton.Size = new System.Drawing.Size(63, 17);
+            this.walleyeButton.TabIndex = 2;
+            this.walleyeButton.TabStop = true;
+            this.walleyeButton.Text = "Walleye";
+            this.walleyeButton.UseVisualStyleBackColor = true;
+            // 
+            // perchButton
+            // 
+            this.perchButton.AutoSize = true;
+            this.perchButton.Location = new System.Drawing.Point(71, 117);
+            this.perchButton.Name = "perchButton";
+            this.perchButton.Size = new System.Drawing.Size(53, 17);
+            this.perchButton.TabIndex = 1;
+            this.perchButton.TabStop = true;
+            this.perchButton.Text = "Perch";
+            this.perchButton.UseVisualStyleBackColor = true;
+            this.perchButton.CheckedChanged += new System.EventHandler(this.perchButton_CheckedChanged);
+            // 
+            // crappieButton
+            // 
+            this.crappieButton.AutoSize = true;
+            this.crappieButton.Location = new System.Drawing.Point(71, 82);
+            this.crappieButton.Name = "crappieButton";
+            this.crappieButton.Size = new System.Drawing.Size(61, 17);
+            this.crappieButton.TabIndex = 0;
+            this.crappieButton.TabStop = true;
+            this.crappieButton.Text = "Crappie";
+            this.crappieButton.UseVisualStyleBackColor = true;
+            // 
             // FishLabel
             // 
             this.FishLabel.AutoSize = true;
@@ -54,56 +91,17 @@
             this.FishLabel.Size = new System.Drawing.Size(103, 13);
             this.FishLabel.TabIndex = 1;
             this.FishLabel.Text = "Choose a fish to see";
-
             this.FishLabel.Click += new System.EventHandler(this.label1_Click);
-
             // 
-            // crappieButton
-            // 
-            this.crappieButton.AutoSize = true;
-            this.crappieButton.Location = new System.Drawing.Point(67, 74);
-            this.crappieButton.Name = "crappieButton";
-            this.crappieButton.Size = new System.Drawing.Size(61, 17);
-            this.crappieButton.TabIndex = 0;
-            this.crappieButton.TabStop = true;
-            this.crappieButton.Text = "Crappie";
-            this.crappieButton.UseVisualStyleBackColor = true;
-
-            this.crappieButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-
-            // 
-            // perchButton
-            // 
-            this.perchButton.AutoSize = true;
-            this.perchButton.Location = new System.Drawing.Point(79, 134);
-            this.perchButton.Name = "perchButton";
-            this.perchButton.Size = new System.Drawing.Size(53, 17);
-            this.perchButton.TabIndex = 1;
-            this.perchButton.TabStop = true;
-            this.perchButton.Text = "Perch";
-            this.perchButton.UseVisualStyleBackColor = true;
-            // 
-            // walleyeButton
-            // 
-            this.walleyeButton.AutoSize = true;
-            this.walleyeButton.Location = new System.Drawing.Point(79, 194);
-            this.walleyeButton.Name = "walleyeButton";
-            this.walleyeButton.Size = new System.Drawing.Size(63, 17);
-            this.walleyeButton.TabIndex = 2;
-            this.walleyeButton.TabStop = true;
-            this.walleyeButton.Text = "Walleye";
-            this.walleyeButton.UseVisualStyleBackColor = true;
-
-            this.walleyeButton.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
-            // FormMain
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.FishLabel);
             this.Controls.Add(this.panel1);
-            this.Name = "FormMain";
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
