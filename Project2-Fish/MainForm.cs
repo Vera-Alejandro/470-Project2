@@ -24,7 +24,9 @@ namespace Project2_Fish
 
         private void crappieButton_CheckedChanged(object sender, EventArgs e)
         {
-            new FormSeeFish("Crappie");
+           FormSeeFish a = new FormSeeFish("Crappie");
+            a.Show();
+            //this.Close();
         }
 
         private void perchButton_CheckedChanged(object sender, EventArgs e)
@@ -36,5 +38,7 @@ namespace Project2_Fish
         {
             new FormSeeFish("Walleye");
         }
+
+
     }
 }

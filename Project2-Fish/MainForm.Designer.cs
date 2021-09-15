@@ -56,9 +56,9 @@ namespace Project2_Fish
             this.walleyeButton.Name = "walleyeButton";
             this.walleyeButton.Size = new System.Drawing.Size(63, 17);
             this.walleyeButton.TabIndex = 2;
-            this.walleyeButton.TabStop = true;
             this.walleyeButton.Text = "Walleye";
             this.walleyeButton.UseVisualStyleBackColor = true;
+            this.walleyeButton.CheckedChanged += new System.EventHandler(this.walleyeButton_CheckedChanged);
             // 
             // perchButton
             // 
@@ -67,7 +67,6 @@ namespace Project2_Fish
             this.perchButton.Name = "perchButton";
             this.perchButton.Size = new System.Drawing.Size(53, 17);
             this.perchButton.TabIndex = 1;
-            this.perchButton.TabStop = true;
             this.perchButton.Text = "Perch";
             this.perchButton.UseVisualStyleBackColor = true;
             this.perchButton.CheckedChanged += new System.EventHandler(this.perchButton_CheckedChanged);
@@ -79,9 +78,9 @@ namespace Project2_Fish
             this.crappieButton.Name = "crappieButton";
             this.crappieButton.Size = new System.Drawing.Size(61, 17);
             this.crappieButton.TabIndex = 0;
-            this.crappieButton.TabStop = true;
             this.crappieButton.Text = "Crappie";
             this.crappieButton.UseVisualStyleBackColor = true;
+            this.crappieButton.CheckedChanged += new System.EventHandler(this.crappieButton_CheckedChanged);
             // 
             // FishLabel
             // 
