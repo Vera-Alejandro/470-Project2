@@ -36,6 +36,7 @@ namespace Project2_Fish
             this.perchButton = new System.Windows.Forms.RadioButton();
             this.crappieButton = new System.Windows.Forms.RadioButton();
             this.FishLabel = new System.Windows.Forms.Label();
+            this.fishButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,13 +91,23 @@ namespace Project2_Fish
             this.FishLabel.Size = new System.Drawing.Size(103, 13);
             this.FishLabel.TabIndex = 1;
             this.FishLabel.Text = "Choose a fish to see";
-            this.FishLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // fishButton
+            // 
+            this.fishButton.Location = new System.Drawing.Point(405, 353);
+            this.fishButton.Name = "fishButton";
+            this.fishButton.Size = new System.Drawing.Size(75, 23);
+            this.fishButton.TabIndex = 2;
+            this.fishButton.Text = "See Fish";
+            this.fishButton.UseVisualStyleBackColor = true;
+            this.fishButton.Click += new System.EventHandler(this.fishButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fishButton);
             this.Controls.Add(this.FishLabel);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
@@ -116,5 +127,6 @@ namespace Project2_Fish
         private System.Windows.Forms.RadioButton walleyeButton;
         private System.Windows.Forms.RadioButton perchButton;
         private System.Windows.Forms.RadioButton crappieButton;
+        private Button fishButton;
     }
 }

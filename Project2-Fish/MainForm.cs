@@ -17,28 +17,27 @@ namespace Project2_Fish
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        string fish;
 
         private void crappieButton_CheckedChanged(object sender, EventArgs e)
         {
-           FormSeeFish a = new FormSeeFish("Crappie");
-            a.Show();
-            //this.Close();
+            fish = "Crappie";
         }
 
         private void perchButton_CheckedChanged(object sender, EventArgs e)
         {
-            new FormSeeFish("Perch");
+            fish = "Perch";
         }
 
         private void walleyeButton_CheckedChanged(object sender, EventArgs e)
         {
-            new FormSeeFish("Walleye");
+            fish = "Walleye";
         }
 
-
+        private void fishButton_Click(object sender, EventArgs e)
+        {
+            FormSeeFish fishForm = new FormSeeFish(fish);
+            fishForm.Show();
+        }
     }
 }
