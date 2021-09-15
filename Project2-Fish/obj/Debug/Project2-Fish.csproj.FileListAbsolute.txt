@@ -1,0 +1,5 @@
+C:\Users\DSU Student\Source\Repos\470-Project2\Project2-Fish\obj\Debug\Project2-Fish.csproj.AssemblyReference.cache
+C:\Users\DSU Student\Source\Repos\470-Project2\Project2-Fish\obj\Debug\Project2_Fish.FormSeeFish.resources
+C:\Users\DSU Student\Source\Repos\470-Project2\Project2-Fish\obj\Debug\Project2_Fish.Properties.Resources.resources
+C:\Users\DSU Student\Source\Repos\470-Project2\Project2-Fish\obj\Debug\Project2-Fish.csproj.GenerateResource.cache
+C:\Users\DSU Student\Source\Repos\470-Project2\Project2-Fish\obj\Debug\Project2-Fish.csproj.CoreCompileInputs.cache
