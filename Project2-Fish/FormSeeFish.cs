@@ -12,9 +12,44 @@ namespace Project2_Fish
 {
     public partial class FormSeeFish : Form
     {
-        public FormSeeFish()
+        private string _Fish;
+
+        public FormSeeFish(string selectedFish)
         {
             InitializeComponent();
+            _Fish = selectedFish;
         }
+        private void LoadPictures()
+        {
+            //pictures get loaded
+            switch (_Fish)
+            {
+                case "Crappie":
+                    pictureBox1.Image = Properties.Resources.Crappie;
+                    break;
+                case "Perch":
+                    pictureBox1.Image = Properties.Resources.Perch;
+                    break;
+                case "Walleye":
+                    pictureBox1.Image = Properties.Resources.Walleye;
+                    break;
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Decision Cancelled.");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Decision is to Throw it back.");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Decision is to Keep it.");
+        }
+
+
     }
 }
