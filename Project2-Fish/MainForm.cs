@@ -41,7 +41,7 @@ namespace Project2_Fish
 
             if (result == DialogResult.OK)
             {
-                MessageBox.Show("The selected fish is " + fishForm.response);
+                MessageBox.Show("The selected " + fishForm.response);
             }
             else
             {

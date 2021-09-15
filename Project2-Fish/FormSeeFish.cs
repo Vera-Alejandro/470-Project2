@@ -40,17 +40,23 @@ namespace Project2_Fish
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Decision Cancelled.");
+            response = "Decision Cancelled.";
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Decision is to Throw it back.");
+            response = "Decision is to Throw it back."; 
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Decision is to Keep it.");
+            response = "Decision is to Keep it.";
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
 
