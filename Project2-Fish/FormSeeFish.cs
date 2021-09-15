@@ -17,6 +17,7 @@ namespace Project2_Fish
         public FormSeeFish(string selectedFish)
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             _Fish = selectedFish;
         }
         private void LoadPictures()
