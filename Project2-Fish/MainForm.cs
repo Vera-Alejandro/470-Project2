@@ -37,7 +37,16 @@ namespace Project2_Fish
         private void fishButton_Click(object sender, EventArgs e)
         {
             FormSeeFish fishForm = new FormSeeFish(fish);
-            fishForm.Show();
+            DialogResult result = fishForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("The selected fish is " + fishForm.response);
+            }
+            else
+            {
+                MessageBox.Show("No fish selected - dialog cancelled");
+            }
         }
     }
 }
