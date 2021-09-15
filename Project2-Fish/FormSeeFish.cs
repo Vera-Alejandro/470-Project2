@@ -25,13 +25,13 @@ namespace Project2_Fish
             switch (_Fish)
             {
                 case "Crappie":
-                    pictureBox1.Image = Properties.Resources.Crappie;
+                    //pictureBox1.Image = Properties.Resources.Crappie;
                     break;
                 case "Perch":
-                    pictureBox1.Image = Properties.Resources.Perch;
+                    //pictureBox1.Image = Properties.Resources.Perch;
                     break;
                 case "Walleye":
-                    pictureBox1.Image = Properties.Resources.Walleye;
+                    //pictureBox1.Image = Properties.Resources.Walleye;
                     break;
             }
         }
