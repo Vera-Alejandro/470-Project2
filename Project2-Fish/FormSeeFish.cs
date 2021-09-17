@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project2_Fish
@@ -20,6 +13,7 @@ namespace Project2_Fish
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             _Fish = selectedFish;
+            LoadPictures();
 
         }
         private void LoadPictures()
@@ -40,14 +34,12 @@ namespace Project2_Fish
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            response = "Decision Cancelled.";
-            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            response = "Decision is to Throw it back."; 
+            response = "Decision is to Throw it back.";
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
